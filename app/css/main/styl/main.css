@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.page,
+.content {
+  width: 100%;
+  clear: both;
+}
+.content {
+  background-color: rgba(255,255,255,0.4);
+}
+.content-body {
+  width: 960px;
+  margin: 0 auto;
+}
+.next-page {
+  position: absolute;
+  width: 960px;
+  margin: 10px 0;
+  bottom: 0;
+}
+.next-page__button {
+  background-image: url("/img/icons.svg");
+  background-position: 64px 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  cursor: pointer;
+}
