@@ -6,10 +6,17 @@ body {
 .page,
 .content {
 	width 100%
-	clear both
+	float left
+}
+.page {
+	border-top 1px solid #bbb
+}
+.page_image {
+	@extend .page
+	border-top none
 }
 .content {
-	background-color rgba(255, 255, 255, 0.4)
+	background-color rgba(255, 255, 255, 0.3)
 }
 .content-body {
 	width 960px

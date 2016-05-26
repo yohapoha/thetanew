@@ -18,7 +18,7 @@ function contentHeight(page) {
 	greeting.css("margin-top", bigMargin);
 	social.css("margin-top", bigMargin);
 }
-contentHeight($(".page"));
+contentHeight($(".js__contentHeight"));
 $(window).resize(function() {
-	contentHeight($(".page"));
+	contentHeight($(".js__contentHeight"));
 })

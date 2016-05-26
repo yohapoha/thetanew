@@ -14,7 +14,7 @@
 }
 .greeting-buttons__link,
 .greeting-buttons__link_highlight {
-  background-color: #1b1b1b;
+  background-color: #2b2b2b;
   padding: 10px 20px;
   margin-right: 40px;
   border-radius: 30px;
@@ -24,11 +24,11 @@
   transition: 0.3s;
 }
 .greeting-buttons__link_highlight {
-  background-color: #643cdc;
+  background-color: #643cfa;
 }
 .greeting-buttons__link:hover {
-  background-color: #2b2b2b;
+  background-color: #3b3b3b;
 }
 .greeting-buttons__link_highlight:hover {
-  background-color: #643cfa;
+  background-color: #714df9;
 }

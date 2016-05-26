@@ -4,12 +4,20 @@ body {
   font-family: Arial, sans-serif;
 }
 .page,
-.content {
+.content,
+.page_image {
   width: 100%;
-  clear: both;
+  float: left;
+}
+.page,
+.page_image {
+  border-top: 1px solid #bbb;
+}
+.page_image {
+  border-top: none;
 }
 .content {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.3);
 }
 .content-body {
   width: 960px;
