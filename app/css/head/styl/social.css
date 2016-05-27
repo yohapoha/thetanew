@@ -9,11 +9,26 @@
   background-size: 144px;
   width: 36px;
   height: 36px;
+  cursor: pointer;
+}
+.social__button_ok {
+  background-position: -36px 0;
+}
+.social-button {
+  width: 36px;
+  height: 36px;
   margin-left: 30px;
   border-radius: 5px;
   float: right;
   cursor: pointer;
 }
-.social__button_ok {
-  background-position: -36px 0;
+.social-button__logo,
+.social-button__logo_vk,
+.social-button__logo_ok {
+  fill: #0b0b0b;
+  transition: 0.3s;
+}
+.social-button:hover .social-button__logo_vk,
+.social-button:hover .social-button__logo_ok {
+  fill: #1b1b1b;
 }

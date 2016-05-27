@@ -3,10 +3,10 @@
 function contentHeight(page) {
 	var screenHeight = document.documentElement.clientHeight;
 	var content = page.find(".content");
-	var menu = $(".menu");
-	var logo = $(".logo");
-	var greeting = $(".greeting");
-	var social = $(".social");
+	var menu = $(".head-menu");
+	var logo = $(".head-logo");
+	var greeting = $(".head-greeting");
+	var social = $(".head-social");
 	var freeSpace = screenHeight - (menu.height() + logo.height() + greeting.height() + social.height());
 	var margin = Math.floor(freeSpace / 4);
 	var bigMargin = Math.floor(margin*1.2)

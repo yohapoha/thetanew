@@ -2,9 +2,21 @@
   width: 100%;
   float: left;
 }
-.logo__image {
+.logo__image,
+.logo__image_small,
+.logo__image_small_text {
   background-image: url("/img/logo.svg");
   background-size: 260px 160px;
   width: 260px;
   height: 160px;
+}
+.logo__image_small,
+.logo__image_small_text {
+  background-size: 130px 80px;
+  width: 130px;
+  height: 80px;
+}
+.logo__image_small_text {
+  background-position: 0 23px;
+  height: 23px;
 }

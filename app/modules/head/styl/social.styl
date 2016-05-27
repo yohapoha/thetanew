@@ -7,9 +7,9 @@
 	background-size 144px
 	width 36px
 	height 36px
-	margin-left 30px
-	border-radius 5px
-	float right
+	
+	
+	
 	cursor pointer
 }
 .social__button_vk {
@@ -18,4 +18,25 @@
 .social__button_ok {
 	@extend .social__button
 	background-position -36px 0
+}
+.social-button {
+	width 36px
+	height 36px
+	margin-left 30px
+	border-radius 5px
+	float right
+	cursor pointer
+}
+.social-button__logo {
+	fill #0b0b0b
+	transition .3s
+}
+.social-button__logo_vk,
+.social-button__logo_ok {
+	@extend .social-button__logo
+}
+.social-button:hover .social-button__logo_vk,
+.social-button:hover .social-button__logo_ok { 
+  fill #1b1b1b
+
 }
