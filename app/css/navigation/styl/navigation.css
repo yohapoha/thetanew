@@ -1,9 +1,9 @@
 .navigation {
   position: fixed;
   top: -100px;
-  background-color: rgba(255,255,255,0.9);
   width: 100%;
-  border-bottom: 1px solid #ebebeb;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
   z-index: 100;
   transition: 0.3s;
 }

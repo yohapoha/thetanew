@@ -2,23 +2,6 @@
 	width 100%
 	float left
 }
-.social__button {
-	background-image url('/img/icons.svg')
-	background-size 144px
-	width 36px
-	height 36px
-	
-	
-	
-	cursor pointer
-}
-.social__button_vk {
-	@extend .social__button
-}
-.social__button_ok {
-	@extend .social__button
-	background-position -36px 0
-}
 .social-button {
 	width 36px
 	height 36px
@@ -28,6 +11,8 @@
 	cursor pointer
 }
 .social-button__logo {
+	width 40px
+	height 40px
 	fill #0b0b0b
 	transition .3s
 }
@@ -37,6 +22,11 @@
 }
 .social-button:hover .social-button__logo_vk,
 .social-button:hover .social-button__logo_ok { 
-  fill #1b1b1b
+	filter: url(#drop-shadow);
+	margin-bottom 5px
+	margin-right 5px
 
+}
+#drop-shadow {
+	color red
 }
