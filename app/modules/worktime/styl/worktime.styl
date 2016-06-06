@@ -1,6 +1,6 @@
 .worktime {
-	width 450px
-	margin-top 250px
+	width 400px
+	margin-top 150px
 	float left
 }
 .worktime-title {
@@ -14,24 +14,27 @@
 	float left
 }
 .worktime-line {
-	background-color #fff
+	background-color #ebebeb
+	border-radius 7px
+	margin-bottom 10px
 	width 100%
-	margin-bottom 0px
-	border-radius 1px
-	border 1px solid #cbcbcb
 	float left
+}
+.worktime-line_last {
+	@extend .worktime-line
+	border-bottom none
 }
 .worktime-line_hover {
 	@extend .worktime-line
-	background-color #fff
-	color #000
+	background-color #643cfa
+	color #fbfbfb
 }
 .worktime-line__select {
-	background-color #cbcbcb
-	width 10px
-	height 10px
-	margin-top 12px
-	margin-left 11px
+	background-color #ebebeb
+	width 8px
+	height 8px
+	margin-top 13px
+	margin-left 12px
 	border 2px solid #fff
 	border-radius 10px
 	float left
@@ -39,16 +42,18 @@
 .worktime-line__select_hover {
 	@extend .worktime-line__select
 	background-color #643cfa
+	border-color #fff
 }
 .worktime-line__day,
 .worktime-line__time {
 	box-sizing border-box
-	width 225px
+	width 200px
 	padding 10px 20px
+	
 	text-align center
 	float left
 }
 .worktime-line__time {
-	width 200px
+	width 173px
 	text-align center
 }
