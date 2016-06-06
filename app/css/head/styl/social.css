@@ -25,10 +25,10 @@
 .social-button__logo,
 .social-button__logo_vk,
 .social-button__logo_ok {
-  fill: #0b0b0b;
+  fill: #1b1b1b;
   transition: 0.3s;
 }
 .social-button:hover .social-button__logo_vk,
 .social-button:hover .social-button__logo_ok {
-  fill: #1b1b1b;
+  fill: #2b2b2b;
 }
