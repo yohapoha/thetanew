@@ -1,0 +1,30 @@
+.worktime {
+  width: 500px;
+  margin: 80px auto;
+}
+.worktime .worktime-line,
+.worktime .worktime-line_hover {
+  background-color: #1b1b1b;
+  width: 100%;
+  color: #fbfbfb;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 8px 0px #8b8b8b;
+  float: left;
+}
+.worktime .worktime-line_hover {
+  background-color: #643cfa;
+  color: #fbfbfb;
+}
+.worktime-line .worktime-line__day,
+.worktime-line .worktime-line__time {
+  box-sizing: border-box;
+  width: 250px;
+  padding: 15px 20px;
+  text-align: center;
+  float: left;
+}
+.worktime-line .worktime-line__time {
+  text-align: center;
+}
