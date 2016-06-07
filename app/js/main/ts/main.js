@@ -7,6 +7,7 @@ function centralizeH(object) {
     object.css("margin-left", margin);
 }
 function centralizeV(object, content) {
+    if (typeof content === "undefined") { content = false; }
     var padding = content ? Math.floor($(".navigation").height() / 2) : 0;
     var parent = content ? object.parent().parent() : object.parent();
     var parentHeight = parent.height();
@@ -16,5 +17,6 @@ function centralizeV(object, content) {
     object.css("padding-top", padding);
 }
 centralizeH($(".js_centralizeH"));
-centralizeV($(".js_centralizeV"), true);
+centralizeV($(".js_centralizeV"));
+centralizeV($(".worktime"), true);
 //# sourceMappingURL=main.js.map

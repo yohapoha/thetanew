@@ -7,7 +7,7 @@ function centralizeH(object:JQuery) {
     var margin = Math.floor((parentWidth - objectWidth)/2);
     object.css("margin-left", margin);
 }
-function centralizeV(object:JQuery, content:boolean) {
+function centralizeV(object:JQuery, content:boolean = false) {
     var padding = content?Math.floor($(".navigation").height()/2):0;
     var parent:JQuery = content?object.parent().parent():object.parent();
     var parentHeight:number = parent.height();
@@ -17,4 +17,5 @@ function centralizeV(object:JQuery, content:boolean) {
     object.css("padding-top", padding);
 }
 centralizeH($(".js_centralizeH"));
-centralizeV($(".js_centralizeV"), true);
+centralizeV($(".js_centralizeV"));
+centralizeV($(".worktime"), true);
