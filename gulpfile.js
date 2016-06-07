@@ -30,11 +30,11 @@ css_stylus = require('gulp-stylus');
 javascript_typescrypt = require('gulp-typescript-compiler');
 javascript_uglify = require('gulp-uglify');
 
-gulp.task('default', ['watch', 'server', 'html', 'css2styl', 'ts2js', 'bower']);
+gulp.task('default', ['watch', 'server', 'html', 'styl2css', 'ts2js', 'bower']);
 
 gulp.task('watch', function() {
     gulp.watch('app/*.html', ['html']);
-    gulp.watch('app/modules/**/*.styl', ['css2styl']);
+    gulp.watch('app/modules/**/*.styl', ['styl2css']);
     gulp.watch('app/modules/**/*.ts', ['ts2js']);
     gulp.watch('bower.json', ['bower']);
 });
@@ -50,7 +50,7 @@ gulp.task('html', function() {
         .pipe(server_connect.reload());
 });
 
-gulp.task('css2styl', function() {
+gulp.task('styl2css', function() {
     gulp.src(['app/modules/**/*.styl'])
         .pipe(css_stylus())
         .pipe(gulp.dest('app/css/'))
@@ -68,7 +68,7 @@ gulp.task('ts2js',function() {
         .pipe(gulp.dest('app/js/'))
         .pipe(server_connect.reload());
 });
-gulp.task('inject', function() {
+gulp.task('inject', ['ts2js', 'styl2css'], function() {
     gulp.src('app/index.html')
         .pipe(file_inject(gulp.src(['css/**/*.css', 'js/**/*.js'], {
             cwd: 'app/',

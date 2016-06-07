@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Theta Technologies</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <!-- build:css css/vendors.css -->
 	<!-- bower:css -->
 	<!-- endbower -->
@@ -15,8 +16,8 @@
 	<link rel="stylesheet" href="/css/head/styl/menu.css">
 	<link rel="stylesheet" href="/css/head/styl/social.css">
 	<link rel="stylesheet" href="/css/main/styl/main.css">
-	<link rel="stylesheet" href="/css/navigation/styl/navigation.css">
 	<link rel="stylesheet" href="/css/worktime/styl/worktime.css">
+	<link rel="stylesheet" href="/css/navigation/styl/navigation.css">
 	<!-- endinject -->
 	<!-- endbuild -->
 	<!-- build:js js/vendors.js -->
@@ -171,28 +172,27 @@
 		<div class="page js__contentHeight">
 			<div class="content">
 				<div class="content-body">
-					<div class="worktime">
-						<div class="worktime-title">Режим работы</div>
-						<div class="worktime-body">
-							<div class="worktime-line worktime-line_hover">
-								<div class="worktime-line__select_hover"></div>
+					<div class="worktime js_centralizeV">
+						<div class="worktime-info">
+							<div class="worktime-line">
+								<div class="worktime-line__select"></div>
 								<div class="worktime-line__day">Понедельник</div>
+								<div class="worktime-line__time">09:00 - 21:00</div>
+							</div>
+							<div class="worktime-line worktime-line_hover">
+								<div class="worktime-line__select"></div>
+								<div class="worktime-line__day">Вторник</div>
 								<div class="worktime-line__time">09:00 - 21:00</div>
 							</div>
 							<div class="worktime-line">
 								<div class="worktime-line__select"></div>
-								<div class="worktime-line__day">Вторник</div>
-								<div class="worktime-line__time">09:00 - 18:00</div>
-							</div>
-							<div class="worktime-line">
-								<div class="worktime-line__select"></div>
 								<div class="worktime-line__day">Среда</div>
-								<div class="worktime-line__time">09:00 - 18:00</div>
+								<div class="worktime-line__time">09:00 - 21:00</div>
 							</div>
 							<div class="worktime-line">
 								<div class="worktime-line__select"></div>
 								<div class="worktime-line__day">Четверг</div>
-								<div class="worktime-line__time">09:00 - 18:00</div>
+								<div class="worktime-line__time">09:00 - 21:00</div>
 							</div>
 							<div class="worktime-line">
 								<div class="worktime-line__select"></div>
@@ -210,6 +210,13 @@
 								<div class="worktime-line__time">12:00 - 16:00</div>
 							</div>
 						</div>
+						<div class="worktime-body">
+							<div class="worktime-title">Режим работы</div>
+							<div class="worktime-text">
+								Вы можете оставить заявку <b>через сайт или электронную почту</b> в любое удобное для Вас время, а <b>по телефону</b> - согласно режиму работы.<br/><br/>
+							</div>
+							<div class="order-button js_centralizeH">Оставить заявку</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -218,6 +225,7 @@
     <!-- build:js js/main.js -->
 	<!-- inject:js -->
 	<script src="/js/head/ts/head.js"></script>
+	<script src="/js/main/ts/main.js"></script>
 	<script src="/js/navigation/ts/navigation.js"></script>
 	<!-- endinject -->
 	<!-- endbuild -->
