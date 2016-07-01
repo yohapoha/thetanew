@@ -1,0 +1,52 @@
+.price,
+.remote {
+  display: table;
+  width: 960px;
+  margin-top: 100px;
+  float: left;
+}
+.remote-body {
+  display: table-cell;
+  width: 400px;
+  padding-right: 160px;
+  vertical-align: middle;
+}
+.price-title,
+.remote-title,
+.price-subtitle {
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+}
+.price-subtitle {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+.price-annotation {
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+.price-annotation__text {
+  padding-top: 10px;
+  font-size: 13px;
+  text-align: justify;
+}
+.remote-text {
+  width: 100%;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 40px;
+  float: left;
+}
+.remote-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+.remote-info__name,
+.remote-info__price {
+  padding: 0 30px;
+  text-align: center;
+}
